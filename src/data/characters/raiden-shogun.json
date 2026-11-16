@@ -1,0 +1,184 @@
+{
+  "id": "raiden-shogun",
+  "name": "Raiden Shogun",
+  "title": "Plane of Euthymia",
+  "rarity": 5,
+  "element": "electro",
+  "weaponType": "polearm",
+  "region": "Inazuma",
+  "primaryRole": "Main DPS",
+  "icon": "/assets/characters/raiden-shogun.png",
+  "materials": {
+    "bookName": "Teachings of Light / Guide to Light",
+    "days": ["Wednesday", "Saturday", "Sunday"],
+    "domain": "Violet Court (Inazuma)",
+    "weeklyBoss": "Magatsu Mitake Narukami no Mikoto (Mudra of the Malefic General)",
+    "worldBoss": "Storm Beads (Thunder Manifestation)",
+    "localSpecialty": "Amakumo Fruit (Seirai Island)",
+    "commonMaterial": "Old / Kageuchi / Famed Handguard (Nobushi)",
+    "elementalGem": "Vajrada Amethyst"
+  },
+  "builds": [
+    {
+      "id": "raiden-hypercarry",
+      "name": "Electro Burst DPS (Hypercarry & National)",
+      "description": "Fokus memaksimalkan damage Elemental Burst (Q) dan memulihkan Energy seluruh anggota party melalui serangan pedang Musou Isshin.",
+      "talentPriority": [
+        "Elemental Burst: Secret Art: Musou Shinsetsu (Maksimal Lv 9-10)",
+        "Elemental Skill: Transcendence: Baleful Omen (Tingkatkan ke Lv 8-9)",
+        "Normal Attack: Origin (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Engulfing Lightning",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Senjata tanda tangan terbaik, mengonversi Energy Recharge berlebih menjadi ATK bonus dan memberikan ER instan setelah Burst."
+        },
+        {
+          "name": "Staff of Homa",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan CRIT DMG masif dan bonus ATK berbasis HP, sangat kuat untuk komposisi hypercarry."
+        },
+        {
+          "name": "The Catch (R5)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Opsi F2P terbaik tak terkalahkan (diperoleh gratis dari memancing di Inazuma). Meningkatkan Burst DMG 32% dan Burst CRIT Rate 12%."
+        },
+        {
+          "name": "Wavebreaker's Fin",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Menyediakan Base ATK sangat tinggi dan bonus Burst DMG berdasarkan total kapasitas Energy seluruh tim."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [
+            { "name": "Emblem of Severed Fate", "pieces": 4 }
+          ],
+          "notes": "Set mutlak terbaik. Memberikan +20% ER dan meningkatkan Burst DMG hingga 75% berdasarkan Energy Recharge Raiden."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Energy Recharge%", "ATK%"],
+        "goblet": ["Electro DMG Bonus%", "ATK%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "Energy Recharge (target 250% - 270%)",
+        "CRIT Rate & CRIT DMG (Rasio ideal 1:2)",
+        "ATK%",
+        "Elemental Mastery"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 60, "recommended": 70, "unit": "%" },
+        "critDmg": { "min": 130, "recommended": 160, "unit": "%" },
+        "energyRecharge": { "min": 250, "recommended": 270, "unit": "%" },
+        "atk": { "min": 1600, "recommended": 1900, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Raiden National (Rational)",
+          "description": "Salah satu komposisi tim paling konsisten dan mematikan di Spiral Abyss dengan kombinasi Overload, Vaporize, dan Electro-Charged.",
+          "members": [
+            { "characterId": "raiden-shogun", "name": "Raiden Shogun", "role": "Main DPS / Battery", "element": "electro", "icon": "/assets/characters/raiden-shogun.png" },
+            { "characterId": "xingqiu", "name": "Xingqiu", "role": "Hydro Sub-DPS", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer & Healer", "element": "pyro", "icon": "/assets/characters/bennett.png" },
+            { "characterId": "mavuika", "name": "Xiangling / Sub Pyro", "role": "Pyro Sub-DPS", "element": "pyro", "icon": "/assets/characters/mavuika.png" }
+          ],
+          "rotationOrder": [
+            "1. Raiden E (Aktifkan koordinasi Electro & Buff Burst tim)",
+            "2. Xingqiu Q -> N1 -> E -> E (Terapkan Hydro & Orbit pedang)",
+            "3. Bennett Q -> E (Buff field ATK masif & Heal)",
+            "4. Pyro Sub-DPS Q -> E (Snapshot buff Bennett)",
+            "5. Raiden Q -> 3x N3C -> N1C (Eksekusi Burst pedang sambil memulihkan energi seluruh tim)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raiden-hyperbloom",
+      "name": "Hyperbloom Trigger (Full EM)",
+      "description": "Memanfaatkan frekuensi serangan otomatis Elemental Skill (E) Raiden untuk memicu Dendro Cores (Hyperbloom) dengan damage dahsyat.",
+      "talentPriority": [
+        "Elemental Skill: Transcendence (Lv 8-9)",
+        "Elemental Burst (Opsional / Lv 1)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Dragon's Bane",
+          "ranking": "BiS",
+          "rarity": 4,
+          "notes": "Memberikan 221 Elemental Mastery secara langsung, pilihan paling efisien dan mudah didapatkan."
+        },
+        {
+          "name": "Moonpiercer",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Senjata craftable Sumeru dengan substat EM yang solid dan passive buff ATK leaf."
+        },
+        {
+          "name": "Kitain Cross Spear",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Memberikan 110 EM dan pasif regenerasi energi tambahan."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [
+            { "name": "Flower of Paradise Lost", "pieces": 4 }
+          ],
+          "notes": "Meningkatkan damage Hyperbloom secara langsung hingga 80% pada tumpukan penuh."
+        },
+        {
+          "type": "4-piece",
+          "sets": [
+            { "name": "Gilded Dreams", "pieces": 4 }
+          ],
+          "notes": "Memberikan total hingga +230 EM ekstra saat reaksi dipicu."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Elemental Mastery"],
+        "goblet": ["Elemental Mastery"],
+        "circlet": ["Elemental Mastery"]
+      },
+      "subStatsPriority": [
+        "Elemental Mastery (Fokus total 900 - 1000+)",
+        "Energy Recharge%",
+        "ATK%"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 20, "recommended": 30, "unit": "%" },
+        "critDmg": { "min": 60, "recommended": 80, "unit": "%" },
+        "energyRecharge": { "min": 130, "recommended": 150, "unit": "%" },
+        "elementalMastery": { "min": 900, "recommended": 1000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Quickbloom / Hyperbloom Driver",
+          "description": "Tim reaksi Hyperbloom dengan Nahida sebagai Dendro aplikator dan Xingqiu/Furina sebagai Hydro generator.",
+          "members": [
+            { "characterId": "raiden-shogun", "name": "Raiden Shogun", "role": "Hyperbloom Trigger", "element": "electro", "icon": "/assets/characters/raiden-shogun.png" },
+            { "characterId": "nahida", "name": "Nahida", "role": "Dendro Applicator & EM Buffer", "element": "dendro", "icon": "/assets/characters/nahida.png" },
+            { "characterId": "xingqiu", "name": "Xingqiu", "role": "Hydro Applicator", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "furina", "name": "Furina / Baizhu", "role": "Sub-DPS / Healer", "element": "hydro", "icon": "/assets/characters/furina.png" }
+          ],
+          "rotationOrder": [
+            "1. Raiden E (Aktifkan aura trigger off-field)",
+            "2. Nahida Hold E -> Q (Tandai semua musuh & bangun Shrine of Maya)",
+            "3. Xingqiu Q -> E -> E (Keluarkan pedang Hydro & ciptakan Dendro Cores)",
+            "4. Healer / Furina Skill -> Serang dengan Normal Attack untuk memicu hujan peluru Hyperbloom"
+          ]
+        }
+      ]
+    }
+  ]
+}

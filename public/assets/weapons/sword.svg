@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Sword Icon -->
+  <path d="M48 12L52 16L24 44L20 40L48 12Z" fill="#94A3B8"/>
+  <path d="M52 16L48 12L44 16L48 20L52 16Z" fill="#CBD5E1"/>
+  <path d="M18 42L22 46L19 49L15 45L18 42Z" fill="#E2E8F0"/>
+  <path d="M17 47L13 51L10 48L14 44L17 47Z" fill="#64748B"/>
+  <circle cx="10" cy="54" r="3" fill="#F59E0B"/>
+</svg>

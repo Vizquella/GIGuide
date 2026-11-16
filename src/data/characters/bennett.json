@@ -1,0 +1,101 @@
+{
+  "id": "bennett",
+  "name": "Bennett",
+  "title": "Trial by Fire",
+  "rarity": 4,
+  "element": "pyro",
+  "weaponType": "sword",
+  "region": "Mondstadt",
+  "primaryRole": "Support",
+  "icon": "/assets/characters/bennett.png",
+  "materials": {
+    "bookName": "Teachings of Resistance / Guide to Resistance",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Forsaken Rift (Mondstadt)",
+    "weeklyBoss": "Dvalin (Dvalin's Plume)",
+    "worldBoss": "Everflame Seed (Pyro Regisvine)",
+    "localSpecialty": "Windwheel Aster (Windrise / Stormterror)",
+    "commonMaterial": "Treasure Hoarder Insignia",
+    "elementalGem": "Agnidus Agate"
+  },
+  "builds": [
+    {
+      "id": "bennett-support",
+      "name": "Universal ATK Buffer & Healer",
+      "description": "Sang 'Arkon Bintang 6' sejati: menyembuhkan karakter aktif hingga 70% HP dan memberikan buff flat ATK masif berdasarkan Base ATK senjata Bennett.",
+      "talentPriority": [
+        "Elemental Burst: Fantastic Voyage (Prioritas Mutlak Lv 10 - Crown!)",
+        "Elemental Skill: Passion Overload (Lv 6-8 untuk generate partikel energi)",
+        "Normal Attack: Strike of Fortune (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Aquila Favonia / Mistsplitter",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Base ATK tertinggi (674), memaksimalkan konversi flat ATK dari Fantastic Voyage ke karakter tim."
+        },
+        {
+          "name": "Skyward Blade",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Kombinasi sempurna: Base ATK 608 tinggi dan substat Energy Recharge 55.1%."
+        },
+        {
+          "name": "Sapwood Blade (Sumeru Craftable)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Pilihan F2P craftable terbaik! Base ATK 565 tinggi untuk kelas bintang 4 + substat 30.6% Energy Recharge."
+        },
+        {
+          "name": "Favonius Sword",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan sangat stabil untuk baterai tim jika tim Anda haus energi."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Noblesse Oblige", "pieces": 4 }],
+          "notes": "Set mutlak terbaik: memberikan tambahan +20% ATK ke seluruh tim selama 12 detik setelah melancarkan Elemental Burst."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Energy Recharge%"],
+        "goblet": ["HP%"],
+        "circlet": ["Healing Bonus%", "HP%"]
+      },
+      "subStatsPriority": [
+        "Energy Recharge (target 220% - 250%+)",
+        "HP%",
+        "Flat HP",
+        "CRIT Rate (jika menggunakan Favonius)"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 20, "recommended": 30, "unit": "%" },
+        "critDmg": { "min": 50, "recommended": 70, "unit": "%" },
+        "energyRecharge": { "min": 220, "recommended": 250, "unit": "%" },
+        "hp": { "min": 28000, "recommended": 32000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Bennett Universal Buffer",
+          "description": "Bennett dapat dimasukkan ke hampir seluruh tim berbasis ATK% (Raiden, Navia, Xiangling, Hu Tao, Diluc, Yoimiya).",
+          "members": [
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer & Healer", "element": "pyro", "icon": "/assets/characters/bennett.png" },
+            { "characterId": "raiden-shogun", "name": "Raiden Shogun", "role": "Main DPS", "element": "electro", "icon": "/assets/characters/raiden-shogun.png" },
+            { "characterId": "xingqiu", "name": "Xingqiu", "role": "Sub-DPS", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kazuha", "role": "Anemo Buffer", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" }
+          ],
+          "rotationOrder": [
+            "1. Posisikan Bennett di tengah musuh",
+            "2. Bennett Q (Hadirkan lingkaran Fantastic Voyage)",
+            "3. Bennett E (Ambil partikel energi)",
+            "4. Karakter berikutnya langsung snapshot ATK buff dalam lingkaran"
+          ]
+        }
+      ]
+    }
+  ]
+}

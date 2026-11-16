@@ -1,0 +1,94 @@
+{
+  "id": "zhongli",
+  "name": "Zhongli",
+  "title": "Vago Mundo",
+  "rarity": 5,
+  "element": "geo",
+  "weaponType": "polearm",
+  "region": "Liyue",
+  "primaryRole": "Sustain / Healer",
+  "icon": "/assets/characters/zhongli.png",
+  "materials": {
+    "bookName": "Teachings of Gold / Guide to Gold",
+    "days": ["Wednesday", "Saturday", "Sunday"],
+    "domain": "Taishan Mansion (Liyue)",
+    "weeklyBoss": "Childe (Tusk of Monoceros Caeli)",
+    "worldBoss": "Basalt Pillar (Geo Hypostasis)",
+    "localSpecialty": "Cor Lapis (Mt. Hulao)",
+    "commonMaterial": "Slime Condensate / Secretions",
+    "elementalGem": "Prithiva Topaz"
+  },
+  "builds": [
+    {
+      "id": "zhongli-shield-bot",
+      "name": "Unbreakable Shield Bot (Full HP)",
+      "description": "Perisai Geo terkuat dan tertebal di Genshin Impact dengan 100% uptime dan pengurangan 20% seluruh jenis Elemental & Physical RES musuh di sekitarnya.",
+      "talentPriority": [
+        "Elemental Skill: Dominus Lapidis (Prioritas Mutlak Lv 9-10)",
+        "Elemental Burst: Planet Befall (Lv 6-8 untuk CC Petrification)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Black Tassel (R5)",
+          "ranking": "BiS",
+          "rarity": 3,
+          "notes": "Pilihan nomor 1 paling efisien! Senjata bintang 3 murah dengan 46.9% HP substat yang sangat masif."
+        },
+        {
+          "name": "Favonius Lance",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan sangat bagus jika tim Anda membutuhkan partikel energi ekstra (gunakan Circlet CRIT Rate)."
+        },
+        {
+          "name": "Staff of Homa",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan HP% ekstra dan CRIT DMG tinggi untuk varian Hybrid Meteor DPS."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Tenacity of the Millelith", "pieces": 4 }],
+          "notes": "Memberikan +20% HP dan +20% ATK tim secara berkala saat pilar batu beresonansi mengenai musuh."
+        }
+      ],
+      "mainStats": {
+        "sands": ["HP%"],
+        "goblet": ["HP%"],
+        "circlet": ["HP%", "CRIT Rate%"]
+      },
+      "subStatsPriority": [
+        "HP% (Target mencapai 45.000 - 50.000 HP)",
+        "Flat HP",
+        "Energy Recharge (target 130%)",
+        "CRIT Rate (jika menggunakan Favonius Lance)"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 20, "recommended": 30, "unit": "%" },
+        "critDmg": { "min": 50, "recommended": 70, "unit": "%" },
+        "energyRecharge": { "min": 120, "recommended": 130, "unit": "%" },
+        "hp": { "min": 45000, "recommended": 50000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Universal Comfort Shield",
+          "description": "Zhongli dapat dimasukkan ke tim manapun yang membutuhkan perisai anti-interupsi mutlak (Hu Tao, Neuvillette, Yoimiya, Ganyu).",
+          "members": [
+            { "characterId": "zhongli", "name": "Zhongli", "role": "Shield & Res Shred", "element": "geo", "icon": "/assets/characters/zhongli.png" },
+            { "characterId": "hu-tao", "name": "Hu Tao / Neuvillette", "role": "Main DPS", "element": "pyro", "icon": "/assets/characters/hu-tao.png" },
+            { "characterId": "xingqiu", "name": "Xingqiu / Furina", "role": "Hydro Sub-DPS", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kazuha / Yelan", "role": "Buffer & Sub-DPS", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" }
+          ],
+          "rotationOrder": [
+            "1. Zhongli Hold E (Pasang perisai Jade Shield & pilar resonansi)",
+            "2. Sub-DPS & Buffer rotasi skill/burst",
+            "3. Main DPS masuk dan serang dengan perlindungan tanpa henti"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "xingqiu",
+  "name": "Xingqiu",
+  "title": "Juvenile Galant",
+  "rarity": 4,
+  "element": "hydro",
+  "weaponType": "sword",
+  "region": "Liyue",
+  "primaryRole": "Sub-DPS",
+  "icon": "/assets/characters/xingqiu.png",
+  "materials": {
+    "bookName": "Teachings of Gold / Guide to Gold",
+    "days": ["Wednesday", "Saturday", "Sunday"],
+    "domain": "Taishan Mansion (Liyue)",
+    "weeklyBoss": "Andrius (Tail of Boreas)",
+    "worldBoss": "Cleansing Heart (Oceanid)",
+    "localSpecialty": "Silk Flower (Liyue Harbor)",
+    "commonMaterial": "Damaged / Stained / Ominous Mask (Hilichurl)",
+    "elementalGem": "Varunada Lazurite"
+  },
+  "builds": [
+    {
+      "id": "xingqiu-subdps",
+      "name": "Raincutter Off-Field Hydro Sub-DPS",
+      "description": "Menyediakan aplikasi Hydro tercepat dan paling stabil di Genshin Impact, pengurangan damage yang diterima tim, serta ketahanan dari gangguan serangan musuh.",
+      "talentPriority": [
+        "Elemental Burst: Guhua Sword: Raincutter (Prioritas Utama Lv 9-10)",
+        "Elemental Skill: Guhua Sword: Fatal Rainscreen (Prioritas Lv 8-9)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Sacrificial Sword (R3-R5)",
+          "ranking": "BiS",
+          "rarity": 4,
+          "notes": "Pilihan legendaris mutlak untuk Xingqiu: mereset cooldown skill 21 detik dan menghasilkan dua kali lipat partikel energi hydro."
+        },
+        {
+          "name": "Favonius Sword",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Sangat andal jika belum memiliki Sacrificial Sword dengan rank refinement tinggi."
+        },
+        {
+          "name": "Fleuve Cendre Ferryman (R5)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Senjata pancing gratis Fontaine dengan 45.9% Energy Recharge dan CRIT Rate pada skill."
+        },
+        {
+          "name": "Primordial Jade Cutter",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Hanya direkomendasikan jika kebutuhan Energy Recharge (200%+) sudah terpenuhi sepenuhnya melalui artefak."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Emblem of Severed Fate", "pieces": 4 }],
+          "notes": "Set terbaik untuk memaksimalkan damage hujan pedang Raincutter berkat konversi Energy Recharge tinggi menjadi Burst DMG."
+        },
+        {
+          "type": "2-piece-combo",
+          "sets": [
+            { "name": "Noblesse Oblige", "pieces": 2 },
+            { "name": "Heart of Depth", "pieces": 2 }
+          ],
+          "notes": "Kombinasi klasik +20% Burst DMG dan +15% Hydro DMG jika belum memiliki set Emblem 4pc yang bagus."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Energy Recharge%", "ATK%"],
+        "goblet": ["Hydro DMG Bonus%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "Energy Recharge (target 180-210% dengan Sacrificial, 220%+ tanpa Sacrificial)",
+        "CRIT Rate & CRIT DMG (Rasio 1:2)",
+        "ATK%",
+        "Elemental Mastery"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 60, "recommended": 70, "unit": "%" },
+        "critDmg": { "min": 120, "recommended": 150, "unit": "%" },
+        "energyRecharge": { "min": 190, "recommended": 220, "unit": "%" },
+        "atk": { "min": 1400, "recommended": 1650, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "National Team Core",
+          "description": "Tulang punggung tim Pyro Vape (Hu Tao, Diluc, Xiangling, Yoimiya) dan Dendro Bloom/Hyperbloom.",
+          "members": [
+            { "characterId": "xingqiu", "name": "Xingqiu", "role": "Hydro Enabler", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "hu-tao", "name": "Hu Tao / Xiangling", "role": "Pyro DPS", "element": "pyro", "icon": "/assets/characters/hu-tao.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "Buffer & Healer", "element": "pyro", "icon": "/assets/characters/bennett.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kazuha", "role": "Anemo Buffer", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" }
+          ],
+          "rotationOrder": [
+            "1. Xingqiu Q -> N1 -> E -> E (Keluarkan pedang Hydro & ambil partikel)",
+            "2. Buffer/Anemo rotasi skill",
+            "3. DPS Pyro masuk dan lakukan Normal/Charged Attack terus menerus"
+          ]
+        }
+      ]
+    }
+  ]
+}

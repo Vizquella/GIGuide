@@ -1,0 +1,103 @@
+{
+  "id": "xiangling",
+  "name": "Xiangling",
+  "title": "Exquisite Delicacy",
+  "rarity": 4,
+  "element": "pyro",
+  "weaponType": "polearm",
+  "region": "Liyue",
+  "primaryRole": "Sub-DPS",
+  "icon": "/assets/characters/xiangling.png",
+  "materials": {
+    "bookName": "Teachings of Diligence / Guide to Diligence",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Taishan Mansion (Liyue)",
+    "weeklyBoss": "Dvalin (Dvalin's Claw)",
+    "worldBoss": "Everflame Seed (Pyro Regisvine)",
+    "localSpecialty": "Jueyun Chili (Qingce Village)",
+    "commonMaterial": "Slime Condensate / Secretions",
+    "elementalGem": "Agnidus Agate"
+  },
+  "builds": [
+    {
+      "id": "xiangling-subdps",
+      "name": "Pyronado Off-Field Vaporize / Melt Sub-DPS",
+      "description": "Ratu Sub-DPS Pyro dengan Pyronado berputar tanpa batas ICD, mampu memicu reaksi Vaporize atau Melt pada setiap putaran serangan.",
+      "talentPriority": [
+        "Elemental Burst: Pyronado (Prioritas Mutlak Lv 9-10)",
+        "Elemental Skill: Guoba Attack (Lv 6-8)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Staff of the Scarlet Sands",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Signature Cyno yang luar biasa kuat di Xiangling: memberikan CRIT Rate 44.1% dan mengonversi EM menjadi ATK masif."
+        },
+        {
+          "name": "Staff of Homa",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan 66.2% CRIT DMG tinggi dan ATK ekstra."
+        },
+        {
+          "name": "The Catch (R5)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Pilihan gratis nomor 1 tak tergantikan! Memberikan 45.9% Energy Recharge, +32% Burst DMG, dan +12% Burst CRIT Rate."
+        },
+        {
+          "name": "Dragon's Bane",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Memberikan 221 EM untuk lonjakan damage reaksi Vaporize yang sangat besar (pastikan ER cukup dari artefak)."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Emblem of Severed Fate", "pieces": 4 }],
+          "notes": "Set mutlak terbaik. Mengubah Energy Recharge Xiangling yang tinggi (200%+) menjadi peningkatan Pyronado Burst DMG hingga +50%."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Energy Recharge%", "Elemental Mastery"],
+        "goblet": ["Pyro DMG Bonus%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "Energy Recharge (target 200% - 220% bersama Bennett)",
+        "CRIT Rate & CRIT DMG (Rasio 1:2)",
+        "Elemental Mastery (target 150 - 250)",
+        "ATK%"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 60, "recommended": 70, "unit": "%" },
+        "critDmg": { "min": 130, "recommended": 160, "unit": "%" },
+        "energyRecharge": { "min": 200, "recommended": 220, "unit": "%" },
+        "elementalMastery": { "min": 150, "recommended": 250, "unit": "" },
+        "atk": { "min": 1300, "recommended": 1500, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "National Team Core",
+          "description": "Kombinasi legendaris Xiangling + Bennett + Xingqiu + Kazuha / Raiden.",
+          "members": [
+            { "characterId": "xiangling", "name": "Xiangling", "role": "Pyro Sub-DPS", "element": "pyro", "icon": "/assets/characters/xiangling.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer & Battery", "element": "pyro", "icon": "/assets/characters/bennett.png" },
+            { "characterId": "xingqiu", "name": "Xingqiu", "role": "Hydro Enabler", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kaedehara Kazuha", "role": "Anemo Shred & Buff", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" }
+          ],
+          "rotationOrder": [
+            "1. Xingqiu Q -> E -> E",
+            "2. Bennett Q -> E (Hadirkan lingkaran buff)",
+            "3. Kazuha E -> Q (Swirl Pyro & Hydro)",
+            "4. Xiangling Q -> E (Snapshot buff Bennett dalam lingkaran)",
+            "5. Serang dengan Normal Attack untuk memicu pedang Xingqiu & putaran Pyronado"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Polearm Icon -->
+  <path d="M50 8L56 14L46 24L40 18L50 8Z" fill="#CBD5E1"/>
+  <path d="M46 10L54 18L44 28L36 20L46 10Z" fill="#94A3B8"/>
+  <path d="M40 22L12 50L14 52L42 24L40 22Z" fill="#F59E0B" stroke="#B45309"/>
+  <path d="M12 50L8 54L10 56L14 52L12 50Z" fill="#64748B"/>
+</svg>

@@ -1,0 +1,102 @@
+{
+  "id": "neuvillette",
+  "name": "Neuvillette",
+  "title": "Ordainer of Inexorable Judgment",
+  "rarity": 5,
+  "element": "hydro",
+  "weaponType": "catalyst",
+  "region": "Fontaine",
+  "primaryRole": "Main DPS",
+  "icon": "/assets/characters/neuvillette.png",
+  "materials": {
+    "bookName": "Teachings of Equity / Guide to Equity",
+    "days": ["Monday", "Thursday", "Sunday"],
+    "domain": "Pale Forgotten Glory (Fontaine)",
+    "weeklyBoss": "All-Devouring Narwhal (Lightless Mass)",
+    "worldBoss": "Fontemer Unihorn (Millennial Pearl Seahorse)",
+    "localSpecialty": "Lumitoile (Liffey Region)",
+    "commonMaterial": "Transoceanic Pearl / Chunk (Fontemer Aberrant)",
+    "elementalGem": "Varunada Lazurite"
+  },
+  "builds": [
+    {
+      "id": "neuvillette-hypercarry",
+      "name": "Equitable Judgment Hypercarry (Charged Attack)",
+      "description": "Menghancurkan barisan musuh dengan semburan laser Hydro dahsyat (Equitable Judgment) yang menyerap Sourcewater Droplets untuk aktivasi instan tanpa jeda charging.",
+      "talentPriority": [
+        "Normal Attack: As Water Finds Its Level (Prioritas Mutlak Lv 10 - Crown!)",
+        "Elemental Burst: O Tides, I Have Returned (Lv 8-9)",
+        "Elemental Skill: O Tears, I Shall Repay (Lv 8-9)"
+      ],
+      "weapons": [
+        {
+          "name": "Tome of the Eternal Flow",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Memberikan 88.2% CRIT DMG, +16% Max HP, +42% Charged Attack DMG, dan pemulihan energi pasif."
+        },
+        {
+          "name": "Sacrificial Jade (Battle Pass)",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Menyediakan hingga 36.8% CRIT Rate, +64% Max HP saat off-field sebentar sebelum bertarung."
+        },
+        {
+          "name": "Prototype Amber (R5)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Opsi F2P craftable terbaik! Memberikan substat HP%, regenerasi energy 18 flat, dan heal untuk seluruh tim."
+        },
+        {
+          "name": "Lost Prayer to the Sacred Winds",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Alternatif bintang 5 standar yang memberikan CRIT Rate 33.1% dan movement speed tambahan."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Marechaussee Hunter", "pieces": 4 }],
+          "notes": "Set mutlak terbaik tanpa tandingan. Mengingat HP Neuvillette terus berfluktuasi saat menembak laser, pasif +36% CRIT Rate selalu aktif 100%!"
+        }
+      ],
+      "mainStats": {
+        "sands": ["HP%"],
+        "goblet": ["Hydro DMG Bonus%", "HP%"],
+        "circlet": ["CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "CRIT DMG",
+        "HP%",
+        "CRIT Rate (target maksimal 64% agar tidak overcap dari 4pc Marechaussee)",
+        "Energy Recharge (target 120-130%)"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 50, "recommended": 60, "unit": "%" },
+        "critDmg": { "min": 220, "recommended": 260, "unit": "%" },
+        "energyRecharge": { "min": 120, "recommended": 130, "unit": "%" },
+        "hp": { "min": 38000, "recommended": 42000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Neuvillette Rainbow Sovereign",
+          "description": "Memaksimalkan pasif A1 Neuvillette (Draconic Glories) dengan memicu 3 reaksi elemen Hydro berbeda.",
+          "members": [
+            { "characterId": "neuvillette", "name": "Neuvillette", "role": "Main DPS", "element": "hydro", "icon": "/assets/characters/neuvillette.png" },
+            { "characterId": "furina", "name": "Furina", "role": "Hydro Buffer & Resonance", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kaedehara Kazuha", "role": "Swirl & Hydro Buff", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" },
+            { "characterId": "xilonen", "name": "Xilonen / Zhongli", "role": "Res Shred & Shield/Heal", "element": "geo", "icon": "/assets/characters/xilonen.png" }
+          ],
+          "rotationOrder": [
+            "1. Neuvillette E (Timbulkan 3 Droplets)",
+            "2. Furina E -> Q (Panggil pelayan & Fanfare)",
+            "3. Kazuha Hold E -> Plunge -> Q (Swirl Hydro buff)",
+            "4. Xilonen E -> 2x NA (Cinder City buff tim & res shred)",
+            "5. Neuvillette Q -> Serap Droplets -> Laser Beam 1 -> Serap Droplets -> Laser Beam 2 & 3"
+          ]
+        }
+      ]
+    }
+  ]
+}

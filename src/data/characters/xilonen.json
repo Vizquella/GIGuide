@@ -1,0 +1,101 @@
+{
+  "id": "xilonen",
+  "name": "Xilonen",
+  "title": "Nameless Wilds' Melody",
+  "rarity": 5,
+  "element": "geo",
+  "weaponType": "sword",
+  "region": "Natlan",
+  "primaryRole": "Support",
+  "icon": "/assets/characters/xilonen.png",
+  "materials": {
+    "bookName": "Teachings of Kindling / Guide to Kindling",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Blazing Ruins (Natlan)",
+    "weeklyBoss": "The All-Consuming Flame (Natlan Trounce Domain)",
+    "worldBoss": "Gold-Inscribed Secret Source Core",
+    "localSpecialty": "Brilliant Chrysanthemum (Natlan Children of Echoes)",
+    "commonMaterial": "Saurian Claws / Fangs (Natlan Saurians)",
+    "elementalGem": "Prithiva Topaz"
+  },
+  "builds": [
+    {
+      "id": "xilonen-support",
+      "name": "Universal Res-Shred & Cinder City Buffer",
+      "description": "Dengan Source Samples, Xilonen memotong 36% Elemental RES dari Pyro, Hydro, Cryo, atau Electro, memberikan heal tim konsisten, dan memicu buff artefak Cinder City +40% DMG.",
+      "talentPriority": [
+        "Elemental Skill: Yohual's Scratch (Prioritas Utama Lv 9-10)",
+        "Elemental Burst: Ocelotlicue Point! (Prioritas Utama Lv 8-10 untuk Heal)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Peak Patrol Song",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Signature Sword: Memberikan DEF% sangat tinggi dan memberikan tambahan +25.6% All Elemental DMG ke seluruh tim."
+        },
+        {
+          "name": "Flute of Ezpitzal (Natlan Craftable)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Pilihan F2P terbaik! Craftable Natlan dengan substat DEF% tinggi dan pasif penambah DEF ekstra setelah menggunakan skill."
+        },
+        {
+          "name": "Favonius Sword",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan luar biasa untuk menjamin 100% uptime Elemental Burst dan menyuplai energy untuk seluruh tim."
+        },
+        {
+          "name": "Cinnabar Spindle",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Senjata event Albedo yang memberikan DEF% besar jika Anda memilikinya."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Scroll of the Hero of Cinder City", "pieces": 4 }],
+          "notes": "Set mutlak terbaik! Memberikan +40% All Elemental DMG ke elemen rekan yang memicu reaksi Nightsoul selama 20 detik."
+        }
+      ],
+      "mainStats": {
+        "sands": ["DEF%", "Energy Recharge%"],
+        "goblet": ["DEF%"],
+        "circlet": ["DEF%", "Healing Bonus%", "CRIT Rate%"]
+      },
+      "subStatsPriority": [
+        "DEF%",
+        "Energy Recharge (target 160% - 180%)",
+        "CRIT Rate (jika menggunakan Favonius Sword)",
+        "Flat DEF"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 30, "recommended": 40, "unit": "%" },
+        "critDmg": { "min": 60, "recommended": 80, "unit": "%" },
+        "energyRecharge": { "min": 160, "recommended": 180, "unit": "%" },
+        "def": { "min": 2800, "recommended": 3200, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Universal Elemental Amplifier",
+          "description": "Menggantikan peran Anemo VV + Healer sekaligus dalam satu slot karakter yang sangat fleksibel.",
+          "members": [
+            { "characterId": "xilonen", "name": "Xilonen", "role": "Res Shred & Healer", "element": "geo", "icon": "/assets/characters/xilonen.png" },
+            { "characterId": "furina", "name": "Furina", "role": "Hydro Buffer & Sub-DPS", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "neuvillette", "name": "Neuvillette / Mavuika", "role": "Main DPS", "element": "hydro", "icon": "/assets/characters/neuvillette.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kazuha / Bennett", "role": "Off-Field Buffer", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" }
+          ],
+          "rotationOrder": [
+            "1. Terapkan elemen tim",
+            "2. Xilonen E -> 2x NA (Aktifkan Nightsoul samples untuk -36% RES & +40% DMG buff tim)",
+            "3. Xilonen Q (Luncurkan speaker heal party)",
+            "4. Main DPS masuk dan serang dengan perlindungan serta buff penuh"
+          ]
+        }
+      ]
+    }
+  ]
+}

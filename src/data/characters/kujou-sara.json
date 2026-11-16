@@ -1,0 +1,107 @@
+{
+  "id": "kujou-sara",
+  "name": "Kujou Sara",
+  "title": "Crowfeather Kaburaya",
+  "rarity": 4,
+  "element": "electro",
+  "weaponType": "bow",
+  "region": "Inazuma",
+  "primaryRole": "Support",
+  "icon": "/assets/characters/kujou-sara.png",
+  "materials": {
+    "bookName": "Teachings of Elegance / Guide to Elegance",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Violet Court (Inazuma)",
+    "weeklyBoss": "Signora (Ashen Heart)",
+    "worldBoss": "Storm Beads (Thunder Manifestation)",
+    "localSpecialty": "Dendrobium (Nazuchi Beach)",
+    "commonMaterial": "Damaged / Stained / Ominous Mask",
+    "elementalGem": "Vajrada Amethyst"
+  },
+  "builds": [
+    {
+      "id": "sara-hypercarry-support",
+      "name": "Electro Hypercarry & CRIT Buffer (C6 Buffer)",
+      "description": "Menyediakan buff flat ATK berbasis Base ATK senjata serta memberikan tambahan +60% Electro CRIT DMG (pada Konstelasi 6) untuk Raiden Shogun atau Keqing.",
+      "talentPriority": [
+        "Elemental Skill: Tengu Stormcall (Prioritas Utama Lv 9-10)",
+        "Elemental Burst: Subjugation: Koukou Sendou (Lv 8-9)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Skyward Harp",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Base ATK 674 tertinggi di kelas Bow, memaksimalkan konversi flat ATK dari Tengu Juumonji buff."
+        },
+        {
+          "name": "Elegy for the End",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Menyediakan Energy Recharge tinggi dan memberikan buff +20% ATK & +100 EM untuk seluruh tim."
+        },
+        {
+          "name": "Fading Twilight (Event Bow) / Mouun's Moon",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Base ATK 565 tinggi untuk senjata bintang 4 + substat Energy Recharge 30.6%."
+        },
+        {
+          "name": "Sacrificial Bow / Favonius Warbow",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan sangat stabil jika rotasi burst tim Anda memerlukan suplai energi tambahan."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Noblesse Oblige", "pieces": 4 }],
+          "notes": "Memberikan +20% ATK ke seluruh tim selama 12 detik setelah melancarkan burst (jika rekan tim lain belum memakainya)."
+        },
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Emblem of Severed Fate", "pieces": 4 }],
+          "notes": "Pilihan terbaik jika ingin memaksimalkan damage petir Elemental Burst Sara sendiri."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Energy Recharge%", "ATK%"],
+        "goblet": ["Electro DMG Bonus%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "Energy Recharge (target 180% - 200%)",
+        "CRIT Rate & CRIT DMG (Rasio 1:2)",
+        "ATK%",
+        "Flat ATK"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 50, "recommended": 65, "unit": "%" },
+        "critDmg": { "min": 110, "recommended": 140, "unit": "%" },
+        "energyRecharge": { "min": 180, "recommended": 200, "unit": "%" },
+        "atk": { "min": 1400, "recommended": 1700, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Raiden Hypercarry Monolith",
+          "description": "Komposisi khusus memaksimalkan tebasan Musou no Hitotachi Raiden Shogun dengan buff bertumpuk.",
+          "members": [
+            { "characterId": "raiden-shogun", "name": "Raiden Shogun", "role": "Main DPS", "element": "electro", "icon": "/assets/characters/raiden-shogun.png" },
+            { "characterId": "kujou-sara", "name": "Kujou Sara", "role": "ATK & C6 Electro Buffer", "element": "electro", "icon": "/assets/characters/kujou-sara.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kaedehara Kazuha", "role": "VV Shred & Electro Buff", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer & Healer", "element": "pyro", "icon": "/assets/characters/bennett.png" }
+          ],
+          "rotationOrder": [
+            "1. Raiden E",
+            "2. Bennett Q -> E",
+            "3. Kazuha Q -> E (Swirl Electro)",
+            "4. Kujou Sara Q -> E",
+            "5. Raiden Q dan serang bertubi-tubi dengan jutaan damage"
+          ]
+        }
+      ]
+    }
+  ]
+}

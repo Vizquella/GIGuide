@@ -1,0 +1,101 @@
+{
+  "id": "furina",
+  "name": "Furina",
+  "title": "Endless Solo of Solitude",
+  "rarity": 5,
+  "element": "hydro",
+  "weaponType": "sword",
+  "region": "Fontaine",
+  "primaryRole": "Sub-DPS",
+  "icon": "/assets/characters/furina.png",
+  "materials": {
+    "bookName": "Teachings of Justice / Guide to Justice",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Pale Forgotten Glory (Fontaine)",
+    "weeklyBoss": "All-Devouring Narwhal (Lightless Mass)",
+    "worldBoss": "Water That Failed To Transcend (Hydro Tulpa)",
+    "localSpecialty": "Lakelight Lily (Erinnyes Forest)",
+    "commonMaterial": "Whopperflower Nectar (Whopperflower)",
+    "elementalGem": "Varunada Lazurite"
+  },
+  "builds": [
+    {
+      "id": "furina-subdps",
+      "name": "Off-Field Salon Solitaire & Fanfare Buffer",
+      "description": "Menghadirkan tiga anggota Salon Solitaire untuk menyerang secara mandiri sambil memicu buff damage universal (Fanfare) hingga 75% untuk seluruh anggota party.",
+      "talentPriority": [
+        "Elemental Burst: Let the People Rejoice (Prioritas Utama Lv 9-10)",
+        "Elemental Skill: Salon Solitaire (Prioritas Utama Lv 9-10)",
+        "Normal Attack: Soloist's Solicitation (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Splendor of Tranquil Waters",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Senjata signature dengan 88.2% CRIT DMG, memberikan bonus Skill DMG saat HP Furina naik/turun dan meningkatkan Max HP tim."
+        },
+        {
+          "name": "Key of Khaj-Nisut",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan HP% luar biasa besar dan mengubah HP menjadi Elemental Mastery untuk seluruh tim."
+        },
+        {
+          "name": "Fleuve Cendre Ferryman (R5)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Didapatkan gratis dari memancing di Fontaine! Memberikan ER 45.9%, +16% Skill CRIT Rate, dan +32% ER tambahan setelah skill."
+        },
+        {
+          "name": "Favonius Sword",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Sangat andal untuk mengatasi kebutuhan Energy Recharge Furina dan menghasilkan neutral particle untuk rekan tim."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Golden Troupe", "pieces": 4 }],
+          "notes": "Set mutlak terbaik tanpa tandingan. Meningkatkan damage Elemental Skill Salon Solitaire hingga total +70% saat berada di luar medan pertempuran."
+        }
+      ],
+      "mainStats": {
+        "sands": ["HP%", "Energy Recharge%"],
+        "goblet": ["HP%", "Hydro DMG Bonus%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "Energy Recharge (target 160-200% tergantung tim)",
+        "CRIT Rate & CRIT DMG (Rasio 1:2)",
+        "HP%",
+        "Flat HP"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 65, "recommended": 75, "unit": "%" },
+        "critDmg": { "min": 140, "recommended": 170, "unit": "%" },
+        "energyRecharge": { "min": 170, "recommended": 190, "unit": "%" },
+        "hp": { "min": 36000, "recommended": 40000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Neuvillette Hypercarry Furina",
+          "description": "Duo Fontaine paling kuat dalam sejarah permainan, di mana mekanika perubahan HP Neuvillette mengisi tumpukan Fanfare secara instan.",
+          "members": [
+            { "characterId": "neuvillette", "name": "Neuvillette", "role": "Main DPS", "element": "hydro", "icon": "/assets/characters/neuvillette.png" },
+            { "characterId": "furina", "name": "Furina", "role": "Sub-DPS & Universal Buffer", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kaedehara Kazuha", "role": "Anemo Swirl & Res Shred", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" },
+            { "characterId": "xilonen", "name": "Xilonen / Zhongli", "role": "Res Shred & Healer", "element": "geo", "icon": "/assets/characters/xilonen.png" }
+          ],
+          "rotationOrder": [
+            "1. Furina Skill (Panggil 3 Salon members) -> Burst (Aktifkan Fanfare)",
+            "2. Kazuha E / Q (Swirl Hydro untuk double RES shred & Hydro bonus)",
+            "3. Xilonen Skill / Burst (Aktifkan Cinder City set buff & heal tim)",
+            "4. Neuvillette Skill/Burst -> Tembak Laser Hydro Charged Attack berkali-kali"
+          ]
+        }
+      ]
+    }
+  ]
+}

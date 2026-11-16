@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Bow Icon -->
+  <path d="M16 16C36 12 48 24 52 48" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 16L52 48" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <path d="M12 52L44 20" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M44 20L40 20M44 20L44 24" stroke="#38BDF8" stroke-width="2"/>
+</svg>

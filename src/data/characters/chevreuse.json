@@ -1,0 +1,104 @@
+{
+  "id": "chevreuse",
+  "name": "Chevreuse",
+  "title": "Executor of Justice",
+  "rarity": 4,
+  "element": "pyro",
+  "weaponType": "polearm",
+  "region": "Fontaine",
+  "primaryRole": "Support",
+  "icon": "/assets/characters/chevreuse.png",
+  "materials": {
+    "bookName": "Teachings of Order / Guide to Order",
+    "days": ["Wednesday", "Saturday", "Sunday"],
+    "domain": "Pale Forgotten Glory (Fontaine)",
+    "weeklyBoss": "All-Devouring Narwhal",
+    "worldBoss": "Fontemer Unihorn",
+    "localSpecialty": "Lumidouce Bell",
+    "commonMaterial": "Meshing Gear / Mechanical Spur",
+    "elementalGem": "Agnidus Agate"
+  },
+  "builds": [
+    {
+      "id": "chevreuse-overload-support",
+      "name": "Overload Res-Shred & ATK Buffer",
+      "description": "Mengubah mekanika reaksi Overload menjadi sangat mematikan: memberikan -40% Pyro & Electro RES shred serta buff hingga +40% ATK ke seluruh tim saat HP Chevreuse mencapai 40.000.",
+      "talentPriority": [
+        "Elemental Skill: Short-Range Rapid Interdiction Fire (Lv 8-9)",
+        "Elemental Burst: Ring of Bursting Grenades (Lv 6-8)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Rightful Reward (Fontaine Craftable)",
+          "ranking": "BiS",
+          "rarity": 4,
+          "notes": "Memberikan HP% substat yang sangat dibutuhkan untuk mencapai ambang 40.000 HP serta energi ekstra saat menerima healing."
+        },
+        {
+          "name": "Black Tassel",
+          "ranking": "F2P",
+          "rarity": 3,
+          "notes": "Opsi bintang 3 paling murah dan mudah didapatkan dengan substat 46.9% HP!"
+        },
+        {
+          "name": "Favonius Lance",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan ideal jika tim Anda membutuhkan suplai energi neutral particle."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Noblesse Oblige", "pieces": 4 }],
+          "notes": "+20% ATK tim setelah Burst (jika HP 40k sudah terpenuhi dari substat)."
+        },
+        {
+          "type": "2-piece-combo",
+          "sets": [
+            { "name": "Tenacity of the Millelith", "pieces": 2 },
+            { "name": "Vourukasha's Glow", "pieces": 2 }
+          ],
+          "notes": "Kombinasi +20% HP + 20% HP untuk mempermudah pemain mencapai target 40.000 HP."
+        }
+      ],
+      "mainStats": {
+        "sands": ["HP%"],
+        "goblet": ["HP%"],
+        "circlet": ["HP%", "Healing Bonus%"]
+      },
+      "subStatsPriority": [
+        "HP% (Fokus mutlak mencapai 40.000 HP)",
+        "Energy Recharge (target 130% - 150%)",
+        "Flat HP",
+        "CRIT Rate (jika menggunakan Favonius)"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 20, "recommended": 30, "unit": "%" },
+        "critDmg": { "min": 50, "recommended": 70, "unit": "%" },
+        "energyRecharge": { "min": 130, "recommended": 150, "unit": "%" },
+        "hp": { "min": 36000, "recommended": 40000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Raiden Chevreuse Overload",
+          "description": "Tim mono Pyro & Electro murni tanpa Anemo yang memanfaatkan -40% Pyro/Electro shred dari pasif Chevreuse.",
+          "members": [
+            { "characterId": "chevreuse", "name": "Chevreuse", "role": "Overload Buffer & Shred", "element": "pyro", "icon": "/assets/characters/chevreuse.png" },
+            { "characterId": "raiden-shogun", "name": "Raiden Shogun", "role": "Main DPS", "element": "electro", "icon": "/assets/characters/raiden-shogun.png" },
+            { "characterId": "xiangling", "name": "Xiangling", "role": "Pyro Sub-DPS", "element": "pyro", "icon": "/assets/characters/xiangling.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer & Healer", "element": "pyro", "icon": "/assets/characters/bennett.png" }
+          ],
+          "rotationOrder": [
+            "1. Raiden E",
+            "2. Chevreuse Hold E (Tembak peluru Overcharged Ball untuk buff +40% ATK & -40% RES shred)",
+            "3. Bennett Q -> E",
+            "4. Xiangling Q -> E",
+            "5. Raiden Q untuk menghancurkan musuh"
+          ]
+        }
+      ]
+    }
+  ]
+}

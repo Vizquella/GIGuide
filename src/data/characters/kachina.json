@@ -1,0 +1,95 @@
+{
+  "id": "kachina",
+  "name": "Kachina",
+  "title": "Mottled Gold Bleached by Tears",
+  "rarity": 4,
+  "element": "geo",
+  "weaponType": "polearm",
+  "region": "Natlan",
+  "primaryRole": "Support",
+  "icon": "/assets/characters/kachina.png",
+  "materials": {
+    "bookName": "Teachings of Conflict / Guide to Conflict",
+    "days": ["Wednesday", "Saturday", "Sunday"],
+    "domain": "Blazing Ruins (Natlan)",
+    "weeklyBoss": "The All-Consuming Flame",
+    "worldBoss": "Overripe Flamegranate",
+    "localSpecialty": "Quenepa Berry (Coatepec Mountain)",
+    "commonMaterial": "Saurian Claws / Fangs",
+    "elementalGem": "Prithiva Topaz"
+  },
+  "builds": [
+    {
+      "id": "kachina-cinder-support",
+      "name": "Cinder City Turbo Drill Support",
+      "description": "Mengendarai Turbo Twirly untuk memicu reaksi Nightsoul Geo, memberikan res-shred dan buff +40% Elemental DMG ke seluruh tim menggunakan set Scroll of the Hero of Cinder City.",
+      "talentPriority": [
+        "Elemental Skill: Go, Go Dvalin! (Prioritas Utama Lv 8-9)",
+        "Elemental Burst: Time to Get Serious! (Lv 6-8)",
+        "Normal Attack (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "Footprint of the Rainbow (Natlan Craftable)",
+          "ranking": "BiS",
+          "rarity": 4,
+          "notes": "Memberikan DEF% sangat tinggi setelah menggunakan Elemental Skill, sangat bersinergi dengan scaling DEF Kachina."
+        },
+        {
+          "name": "Favonius Lance",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan terbaik untuk mengisi ulang energi burst seluruh party secara konsisten."
+        },
+        {
+          "name": "Rightful Reward (Fontaine Craftable)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Opsi craftable alternatif dengan substat HP dan pemulihan energi saat menerima healing."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Scroll of the Hero of Cinder City", "pieces": 4 }],
+          "notes": "Set mutlak terbaik! Memberikan +40% DMG bonus untuk elemen karakter party yang memicu reaksi Nightsoul selama 20 detik."
+        }
+      ],
+      "mainStats": {
+        "sands": ["DEF%", "Energy Recharge%"],
+        "goblet": ["DEF%", "Geo DMG Bonus%"],
+        "circlet": ["DEF%", "CRIT Rate%"]
+      },
+      "subStatsPriority": [
+        "DEF%",
+        "Energy Recharge (target 160% - 180%)",
+        "CRIT Rate (jika menggunakan Favonius Lance)",
+        "Flat DEF"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 35, "recommended": 50, "unit": "%" },
+        "critDmg": { "min": 70, "recommended": 90, "unit": "%" },
+        "energyRecharge": { "min": 160, "recommended": 180, "unit": "%" },
+        "def": { "min": 2000, "recommended": 2400, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Natlan Nightsoul Synergy",
+          "description": "Kachina sebagai pengaktif buff Cinder City untuk karakter DPS Natlan seperti Mavuika atau Kinich.",
+          "members": [
+            { "characterId": "kachina", "name": "Kachina", "role": "Buffer & Nightsoul Trigger", "element": "geo", "icon": "/assets/characters/kachina.png" },
+            { "characterId": "mavuika", "name": "Mavuika", "role": "Main DPS", "element": "pyro", "icon": "/assets/characters/mavuika.png" },
+            { "characterId": "furina", "name": "Furina", "role": "Hydro Buffer", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "Healer & ATK Buffer", "element": "pyro", "icon": "/assets/characters/bennett.png" }
+          ],
+          "rotationOrder": [
+            "1. Furina E -> Q",
+            "2. Kachina E (Panggil Turbo Twirly untuk picu Cinder City +40% DMG)",
+            "3. Bennett Q -> E",
+            "4. Mavuika masuk ke mode tempur dengan buff penuh"
+          ]
+        }
+      ]
+    }
+  ]
+}

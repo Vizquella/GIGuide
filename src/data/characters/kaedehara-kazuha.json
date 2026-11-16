@@ -1,0 +1,100 @@
+{
+  "id": "kaedehara-kazuha",
+  "name": "Kaedehara Kazuha",
+  "title": "Scarlet Leaves Pursue Wild Waves",
+  "rarity": 5,
+  "element": "anemo",
+  "weaponType": "sword",
+  "region": "Inazuma",
+  "primaryRole": "Support",
+  "icon": "/assets/characters/kaedehara-kazuha.png",
+  "materials": {
+    "bookName": "Teachings of Diligence / Guide to Diligence",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Taishan Mansion (Liyue)",
+    "weeklyBoss": "Azhdaha (Gilded Scale)",
+    "worldBoss": "Marionette Core (Maguu Kenki)",
+    "localSpecialty": "Sea Ganoderma (Inazuma Coast)",
+    "commonMaterial": "Treasure Hoarder Insignia",
+    "elementalGem": "Vayuda Turquoise"
+  },
+  "builds": [
+    {
+      "id": "kazuha-full-em",
+      "name": "Full EM Swirl & Universal Elemental Buffer",
+      "description": "Mengumpulkan musuh (crowd control), mengurangi elemental resistance lawan 40% (Viridescent Venerer), dan memberikan bonus Elemental DMG hingga 40% kepada seluruh anggota tim.",
+      "talentPriority": [
+        "Elemental Burst: Kazuha Slash (Lv 8-9)",
+        "Elemental Skill: Chihayaburu (Lv 8-9)",
+        "Normal Attack: Garyuu Bladework (Lv 6-8 untuk Plunge DMG)"
+      ],
+      "weapons": [
+        {
+          "name": "Freedom-Sworn",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Senjata signature terbaik: 198 EM, +20% ATK dan +16% Normal/Charged/Plunge DMG ke seluruh tim."
+        },
+        {
+          "name": "Xiphos' Moonlight",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Memberikan 165 EM dan mengonversi EM menjadi Energy Recharge untuk Kazuha dan seluruh party."
+        },
+        {
+          "name": "Favonius Sword",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan paling nyaman untuk rotasi burst lancar tanpa kendala energy deficit."
+        },
+        {
+          "name": "Iron Sting (R1)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Craftable gratis di Blacksmith dengan 165 Elemental Mastery, solusi F2P ramah pemain baru."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Viridescent Venerer", "pieces": 4 }],
+          "notes": "Set mutlak yang mendefinisikan peran Anemo buffer: mengurangi Elemental RES musuh yang di-Swirl sebesar 40% selama 10 detik."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Elemental Mastery", "Energy Recharge%"],
+        "goblet": ["Elemental Mastery"],
+        "circlet": ["Elemental Mastery"]
+      },
+      "subStatsPriority": [
+        "Energy Recharge (target 160% - 180%)",
+        "Elemental Mastery (target 850 - 1000)",
+        "CRIT Rate (jika menggunakan Favonius Sword)"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 25, "recommended": 35, "unit": "%" },
+        "critDmg": { "min": 60, "recommended": 80, "unit": "%" },
+        "energyRecharge": { "min": 160, "recommended": 180, "unit": "%" },
+        "elementalMastery": { "min": 850, "recommended": 1000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Universal Elemental Hypercarry (Mono/Vape/Freeze)",
+          "description": "Kazuha cocok di hampir semua komposisi Pyro, Hydro, Electro, dan Cryo sebagai amplifier damage utama.",
+          "members": [
+            { "characterId": "kaedehara-kazuha", "name": "Kaedehara Kazuha", "role": "Anemo Buffer & CC", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer & Healer", "element": "pyro", "icon": "/assets/characters/bennett.png" },
+            { "characterId": "furina", "name": "Furina / Xiangling", "role": "Sub-DPS", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "neuvillette", "name": "Neuvillette / Raiden", "role": "Main DPS", "element": "hydro", "icon": "/assets/characters/neuvillette.png" }
+          ],
+          "rotationOrder": [
+            "1. Terapkan elemen dari Main DPS atau Sub-DPS ke musuh",
+            "2. Kazuha Hold E -> Midair Plunge (Kumpulkan musuh, Swirl & shred RES 40%)",
+            "3. Kazuha Q (Hadirkan Autumn Whirlwind field untuk 지속 bonus buff)",
+            "4. Main DPS masuk dan gunakan buff elemental masif"
+          ]
+        }
+      ]
+    }
+  ]
+}

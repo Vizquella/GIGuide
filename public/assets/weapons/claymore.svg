@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Claymore Icon -->
+  <path d="M46 8L56 18L32 42L22 32L46 8Z" fill="#94A3B8"/>
+  <path d="M22 32L14 40L24 50L32 42L22 32Z" fill="#CBD5E1"/>
+  <path d="M14 40L8 46L18 56L24 50L14 40Z" fill="#E2E8F0"/>
+  <rect x="7" y="53" width="6" height="6" fill="#F59E0B" transform="rotate(45 10 56)"/>
+</svg>

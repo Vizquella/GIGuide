@@ -1,0 +1,180 @@
+{
+  "id": "arlecchino",
+  "name": "Arlecchino",
+  "title": "Dire Balemoon",
+  "rarity": 5,
+  "element": "pyro",
+  "weaponType": "polearm",
+  "region": "Fontaine",
+  "primaryRole": "Main DPS",
+  "icon": "/assets/characters/arlecchino.png",
+  "materials": {
+    "bookName": "Teachings of Order / Guide to Order",
+    "days": ["Wednesday", "Saturday", "Sunday"],
+    "domain": "Pale Forgotten Glory (Fontaine)",
+    "weeklyBoss": "The Knave (Fading Candle / Silken Feather)",
+    "worldBoss": "Fragment of a Golden Melody (Legatus Golem)",
+    "localSpecialty": "Rainbow Rose (Beryl Region, Fontaine)",
+    "commonMaterial": "Lieutenant's / Sergeant's / Recruit's Insignia (Fatui)",
+    "elementalGem": "Agnidus Agate"
+  },
+  "builds": [
+    {
+      "id": "arlecchino-bond-vape",
+      "name": "Bond of Life Vaporize Hypercarry",
+      "description": "Memanfaatkan mekanika Bond of Life unik untuk melancarkan serangan Normal Attack berapi (Masque of the Red Death) dengan damage Pyro dahsyat yang terhubung reaksi Vaporize.",
+      "talentPriority": [
+        "Normal Attack: Invitation to a Beheading (Prioritas Mutlak Lv 10 - Crown!)",
+        "Elemental Skill: All Is Ash (Prioritas Utama Lv 8-9)",
+        "Elemental Burst: Balemoon Rising (Lv 8-9 untuk self-heal darurat)"
+      ],
+      "weapons": [
+        {
+          "name": "Crimson Moon's Semblance",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Signature Weapon terbaik tak tertandingi: CRIT Rate 22.1%, memberikan +25% Bond of Life instan dari Charged Attack dan buff damage hingga 36%."
+        },
+        {
+          "name": "Staff of Homa",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan 66.2% CRIT DMG dan bonus ATK berbasis HP, alternatif bintang 5 yang sangat mematikan."
+        },
+        {
+          "name": "Deathmatch (Battle Pass)",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "CRIT Rate 36.8% yang sangat tinggi mempermudah pemain menyeimbangkan rasio artefak."
+        },
+        {
+          "name": "White Tassel (R5)",
+          "ranking": "F2P",
+          "rarity": 3,
+          "notes": "Senjata bintang 3 F2P terbaik (didapat dari peti Liyue/Chenyu Vale)! Memberikan CRIT Rate 23.4% dan peningkatan Normal Attack DMG +48%."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Fragment of Harmonic Whimsy", "pieces": 4 }],
+          "notes": "Set mutlak terbaik tanpa tandingan. Mengingat nilai Bond of Life Arlecchino selalu naik/turun saat menyerang, pasif +54% Total DMG aktif 100%!"
+        },
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Gladiator's Finale", "pieces": 4 }],
+          "notes": "Alternatif transisi yang sangat kuat: memberikan +18% ATK dan +35% Normal Attack DMG."
+        }
+      ],
+      "mainStats": {
+        "sands": ["ATK%", "Elemental Mastery"],
+        "goblet": ["Pyro DMG Bonus%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "CRIT Rate & CRIT DMG (Rasio ideal 1:2)",
+        "ATK%",
+        "Elemental Mastery (target 100-200 untuk tim Vaporize)",
+        "Energy Recharge (target 110-120%)"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 65, "recommended": 75, "unit": "%" },
+        "critDmg": { "min": 170, "recommended": 210, "unit": "%" },
+        "energyRecharge": { "min": 110, "recommended": 125, "unit": "%" },
+        "atk": { "min": 2100, "recommended": 2400, "unit": "" },
+        "elementalMastery": { "min": 100, "recommended": 180, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Arlecchino Vaporize Carry",
+          "description": "Kombinasi klasik dengan Xingqiu/Yelan dan Zhongli/Kazuha untuk perlindungan dan reaksi Vaporize bertubi-tubi.",
+          "members": [
+            { "characterId": "arlecchino", "name": "Arlecchino", "role": "Main DPS", "element": "pyro", "icon": "/assets/characters/arlecchino.png" },
+            { "characterId": "xingqiu", "name": "Xingqiu / Yelan", "role": "Hydro Sub-DPS", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer", "element": "pyro", "icon": "/assets/characters/bennett.png" },
+            { "characterId": "zhongli", "name": "Zhongli / Kazuha", "role": "Shield & Res Shred", "element": "geo", "icon": "/assets/characters/zhongli.png" }
+          ],
+          "rotationOrder": [
+            "1. Arlecchino E (Terapkan Blood-Debt Directive ke musuh)",
+            "2. Zhongli Hold E (Pasang perisai tebal) atau Kazuha E/Q",
+            "3. Xingqiu Q -> E -> E (Aplikasi Hydro)",
+            "4. Bennett Q -> E (Hadirkan lingkaran ATK buff)",
+            "5. Arlecchino Charged Attack (Serap Directive menjadi Bond of Life) -> 6-8x Normal Attack combo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arlecchino-overload",
+      "name": "Chevreuse Overload Annihilator",
+      "description": "Memanfaatkan pasif Chevreuse untuk memotong 40% Pyro & Electro RES tanpa perlu karakter Anemo, menghasilkan damage murni konsisten.",
+      "talentPriority": [
+        "Normal Attack (Lv 10)",
+        "Elemental Skill (Lv 8-9)",
+        "Elemental Burst (Lv 8)"
+      ],
+      "weapons": [
+        {
+          "name": "Crimson Moon's Semblance",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Pilihan nomor satu untuk damage maksimal."
+        },
+        {
+          "name": "Staff of the Scarlet Sands",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan CRIT Rate 44.1% yang sangat tinggi."
+        },
+        {
+          "name": "White Tassel (R5)",
+          "ranking": "F2P",
+          "rarity": 3,
+          "notes": "+48% Normal Attack DMG gratis."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Fragment of Harmonic Whimsy", "pieces": 4 }],
+          "notes": "Peningkatan 54% Total DMG."
+        }
+      ],
+      "mainStats": {
+        "sands": ["ATK%"],
+        "goblet": ["Pyro DMG Bonus%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "CRIT Rate & CRIT DMG",
+        "ATK%",
+        "Flat ATK"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 70, "recommended": 80, "unit": "%" },
+        "critDmg": { "min": 170, "recommended": 220, "unit": "%" },
+        "energyRecharge": { "min": 110, "recommended": 120, "unit": "%" },
+        "atk": { "min": 2200, "recommended": 2500, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Pure Overload Core",
+          "description": "Duet Arlecchino + Chevreuse + Raiden/Fischl + Bennett.",
+          "members": [
+            { "characterId": "arlecchino", "name": "Arlecchino", "role": "Main DPS", "element": "pyro", "icon": "/assets/characters/arlecchino.png" },
+            { "characterId": "chevreuse", "name": "Chevreuse", "role": "Overload Shred & ATK Buffer", "element": "pyro", "icon": "/assets/characters/chevreuse.png" },
+            { "characterId": "raiden-shogun", "name": "Raiden Shogun / Fischl", "role": "Electro Battery & Sub-DPS", "element": "electro", "icon": "/assets/characters/raiden-shogun.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buffer", "element": "pyro", "icon": "/assets/characters/bennett.png" }
+          ],
+          "rotationOrder": [
+            "1. Arlecchino E",
+            "2. Raiden E (Aura Electro)",
+            "3. Chevreuse Hold E (Picu Overload, potong 40% RES & beri +40% ATK)",
+            "4. Bennett Q -> E",
+            "5. Arlecchino CA -> Masuki mode tebasan beruntun"
+          ]
+        }
+      ]
+    }
+  ]
+}

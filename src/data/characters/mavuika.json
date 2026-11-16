@@ -1,0 +1,102 @@
+{
+  "id": "mavuika",
+  "name": "Mavuika",
+  "title": "Habringer of the Blazing Sun",
+  "rarity": 5,
+  "element": "pyro",
+  "weaponType": "claymore",
+  "region": "Natlan",
+  "primaryRole": "Main DPS",
+  "icon": "/assets/characters/mavuika.png",
+  "materials": {
+    "bookName": "Teachings of Contention / Guide to Contention",
+    "days": ["Monday", "Thursday", "Sunday"],
+    "domain": "Blazing Ruins (Natlan)",
+    "weeklyBoss": "The All-Consuming Flame (Natlan Trounce Domain)",
+    "worldBoss": "Gold-Inscribed Secret Source Core",
+    "localSpecialty": "Withering Purpurbloom (Natlan Basin)",
+    "commonMaterial": "Saurian Claws / Fangs (Natlan Saurians)",
+    "elementalGem": "Agnidus Agate"
+  },
+  "builds": [
+    {
+      "id": "mavuika-nightsoul-dps",
+      "name": "Nightsoul Blazing Chariot DPS",
+      "description": "Mengendarai sepeda motor api berkekuatan Nightsoul, melancarkan rentetan tebasan Pyro eksplosif dan Elemental Burst pemusnah arena.",
+      "talentPriority": [
+        "Elemental Burst: Ancient Name's Judgement (Lv 10)",
+        "Elemental Skill: Blazing Chariot Drive (Lv 9-10)",
+        "Normal Attack (Lv 6-8)"
+      ],
+      "weapons": [
+        {
+          "name": "A Thousand Blazing Suns",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Signature Claymore: CRIT Rate tinggi, meningkatkan ATK dan CRIT DMG saat berada dalam Nightsoul's Blessing."
+        },
+        {
+          "name": "Serpent Spine (Battle Pass)",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Memberikan CRIT Rate tinggi dan peningkatan total DMG hingga 50% pada stack 5."
+        },
+        {
+          "name": "Earth Shaker (Natlan Craftable)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Craftable Natlan gratis! Memberikan ATK% tinggi dan meningkatkan Skill DMG secara masif setelah memicu Pyro reactions."
+        },
+        {
+          "name": "Beacon of the Reed Sea",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan 33.1% CRIT Rate, bonus ATK masif dan Max HP tambahan."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Obsidian Codex", "pieces": 4 }],
+          "notes": "Set artefak Natlan terbaik: memberikan +40% CRIT Rate saat mengonsumsi Nightsoul points di medan tempur!"
+        }
+      ],
+      "mainStats": {
+        "sands": ["ATK%", "Elemental Mastery"],
+        "goblet": ["Pyro DMG Bonus%"],
+        "circlet": ["CRIT DMG%", "CRIT Rate%"]
+      },
+      "subStatsPriority": [
+        "CRIT DMG",
+        "CRIT Rate (target 50-60% karena 4pc Obsidian Codex memberi +40%)",
+        "ATK%",
+        "Energy Recharge (target 130%)",
+        "Elemental Mastery"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 50, "recommended": 60, "unit": "%" },
+        "critDmg": { "min": 200, "recommended": 240, "unit": "%" },
+        "energyRecharge": { "min": 125, "recommended": 140, "unit": "%" },
+        "atk": { "min": 2000, "recommended": 2300, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Mavuika Vaporize / Melt Overdrive",
+          "description": "Memanfaatkan sinergi Natlan Nightsoul bersama Xilonen dan Hydro applicator untuk reaksi beruntun.",
+          "members": [
+            { "characterId": "mavuika", "name": "Mavuika", "role": "Main DPS", "element": "pyro", "icon": "/assets/characters/mavuika.png" },
+            { "characterId": "xilonen", "name": "Xilonen", "role": "Res Shred & Cinder Buff", "element": "geo", "icon": "/assets/characters/xilonen.png" },
+            { "characterId": "furina", "name": "Furina / Xingqiu", "role": "Hydro Enabler", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "bennett", "name": "Bennett", "role": "ATK Buff & Heal", "element": "pyro", "icon": "/assets/characters/bennett.png" }
+          ],
+          "rotationOrder": [
+            "1. Furina E -> Q (Panggil salon & Fanfare)",
+            "2. Xilonen E -> 2x NA (Aktifkan Nightsoul shred & Cinder City 40% DMG buff)",
+            "3. Bennett Q -> E (Hadirkan field ATK)",
+            "4. Mavuika Q -> Masuk ke mode Chariot E dan serang bertubi-tubi"
+          ]
+        }
+      ]
+    }
+  ]
+}

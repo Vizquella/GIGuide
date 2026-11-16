@@ -1,0 +1,101 @@
+{
+  "id": "nahida",
+  "name": "Nahida",
+  "title": "Physic of Purity",
+  "rarity": 5,
+  "element": "dendro",
+  "weaponType": "catalyst",
+  "region": "Sumeru",
+  "primaryRole": "Sub-DPS",
+  "icon": "/assets/characters/nahida.png",
+  "materials": {
+    "bookName": "Teachings of Ingenuity / Guide to Ingenuity",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Steeple of Ignorance (Sumeru)",
+    "weeklyBoss": "Journeyman Scaramouche (Puppet Strings)",
+    "worldBoss": "Quelled Creeper (Dendro Hypostasis)",
+    "localSpecialty": "Kalpalata Lotus (Cliffside Sumeru)",
+    "commonMaterial": "Fungal Spores / Luminescent Pollen (Fungus)",
+    "elementalGem": "Nagadus Emerald"
+  },
+  "builds": [
+    {
+      "id": "nahida-support-em",
+      "name": "Off-Field Deepwood Buffer (Full EM Support)",
+      "description": "Fokus memberikan shred Dendro RES 30% ke seluruh musuh dan membagikan hingga 250 Elemental Mastery kepada karakter aktif di dalam kuil Maya.",
+      "talentPriority": [
+        "Elemental Skill: All Schemes to Know (Prioritas Maksimal Lv 9-10)",
+        "Elemental Burst: Illusory Heart (Prioritas Lv 8-9)",
+        "Normal Attack: Akara (Abaikan / Lv 1)"
+      ],
+      "weapons": [
+        {
+          "name": "A Thousand Floating Dreams",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Menyediakan EM terbesar dan memberikan buff EM ekstra kepada seluruh anggota tim."
+        },
+        {
+          "name": "Kagura's Verity",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan CRIT DMG 66.2% dan buff Skill DMG bertumpuk untuk damage Tri-Karma Purification tertinggi."
+        },
+        {
+          "name": "Sacrificial Fragments",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Memberikan 221 EM dan kesempatan me-reset cooldown skill jika diperlukan reposisi tanda."
+        },
+        {
+          "name": "Magic Guide (R5)",
+          "ranking": "F2P",
+          "rarity": 3,
+          "notes": "Senjata bintang 3 terjangkau dengan 187 EM dan pasif +24% DMG terhadap musuh terkena Hydro/Electro."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Deepwood Memories", "pieces": 4 }],
+          "notes": "Set wajib untuk komposisi Dendro! Mengurangi Dendro RES lawan sebesar 30% saat skill mengenai musuh."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Elemental Mastery"],
+        "goblet": ["Elemental Mastery", "Dendro DMG Bonus%"],
+        "circlet": ["Elemental Mastery", "CRIT Rate%"]
+      },
+      "subStatsPriority": [
+        "Elemental Mastery (target 800-1000 EM)",
+        "CRIT Rate & CRIT DMG",
+        "Energy Recharge (target 120-130%)",
+        "ATK%"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 45, "recommended": 60, "unit": "%" },
+        "critDmg": { "min": 110, "recommended": 130, "unit": "%" },
+        "energyRecharge": { "min": 120, "recommended": 130, "unit": "%" },
+        "elementalMastery": { "min": 800, "recommended": 1000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Alhaitham / Cyno Quickbloom",
+          "description": "Sinergi terbaik untuk Quicken & Hyperbloom bersama Nahida sebagai pemasok aura Dendro tanpa henti.",
+          "members": [
+            { "characterId": "nahida", "name": "Nahida", "role": "Dendro Buffer & Debuffer", "element": "dendro", "icon": "/assets/characters/nahida.png" },
+            { "characterId": "furina", "name": "Furina / Xingqiu", "role": "Hydro Sub-DPS", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "raiden-shogun", "name": "Kuki Shinobu / Raiden", "role": "Electro Trigger", "element": "electro", "icon": "/assets/characters/raiden-shogun.png" },
+            { "characterId": "xilonen", "name": "Alhaitham / Cyno", "role": "Main DPS", "element": "dendro", "icon": "/assets/characters/xilonen.png" }
+          ],
+          "rotationOrder": [
+            "1. Nahida Hold E (Tandai musuh) -> Q (Bangun Shrine of Maya)",
+            "2. Hydro Sub-DPS Q -> E (Aplikasi Hydro off-field)",
+            "3. Electro Trigger E (Aktifkan healing ring / electro aura)",
+            "4. Main DPS masuk dan rotasi normal/charged combo"
+          ]
+        }
+      ]
+    }
+  ]
+}

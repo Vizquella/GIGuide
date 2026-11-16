@@ -1,0 +1,107 @@
+{
+  "id": "hu-tao",
+  "name": "Hu Tao",
+  "title": "Fragrance in Thaw",
+  "rarity": 5,
+  "element": "pyro",
+  "weaponType": "polearm",
+  "region": "Liyue",
+  "primaryRole": "Main DPS",
+  "icon": "/assets/characters/hu-tao.png",
+  "materials": {
+    "bookName": "Teachings of Diligence / Guide to Diligence",
+    "days": ["Tuesday", "Friday", "Sunday"],
+    "domain": "Taishan Mansion (Liyue)",
+    "weeklyBoss": "Childe (Shard of a Foul Legacy)",
+    "worldBoss": "Juvenile Jade (Primo Geovishap)",
+    "localSpecialty": "Silk Flower (Liyue Harbor / Wangshu Inn)",
+    "commonMaterial": "Whopperflower Nectar (Whopperflower)",
+    "elementalGem": "Agnidus Agate"
+  },
+  "builds": [
+    {
+      "id": "hu-tao-vape",
+      "name": "Crimson Witch Vaporize DPS",
+      "description": "Gaya bermain klasik terkuat: memicu reaksi Vaporize konsisten lewat Charged Attack saat berada dalam status Paramita Papilio.",
+      "talentPriority": [
+        "Normal Attack: Secret Spear of Wangsheng (Prioritas Utama Lv 9-10)",
+        "Elemental Skill: Guide to Afterlife (Prioritas Utama Lv 9-10)",
+        "Elemental Burst: Spirit Soother (Prioritas Lv 8-9)"
+      ],
+      "weapons": [
+        {
+          "name": "Staff of Homa",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Senjata legendaris tanda tangan Hu Tao: 66.2% CRIT DMG, +20% HP, dan bonus ATK berlipat saat HP di bawah 50%."
+        },
+        {
+          "name": "Dragon's Bane (R5)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Opsi F2P paling mematikan untuk Vaporize! 221 EM dan +36% DMG terhadap musuh terkena Pyro/Hydro."
+        },
+        {
+          "name": "Deathmatch (Battle Pass)",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Memberikan 36.8% CRIT Rate yang sangat tinggi, mempermudah pembangunan rasio stat artefak."
+        },
+        {
+          "name": "Ballad of the Fjords",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Senjata Battle Pass Fontaine yang memberikan 120-240 EM tambahan dalam tim multi-elemen."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Crimson Witch of Flames", "pieces": 4 }],
+          "notes": "Meningkatkan damage reaksi Vaporize sebesar 15% dan memberikan total +22.5% Pyro DMG Bonus."
+        },
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Shimenawa's Reminiscence", "pieces": 4 }],
+          "notes": "Alternatif kuat: mengorbankan 15 Energy untuk meningkatkan Normal/Charged Attack hingga 50%."
+        }
+      ],
+      "mainStats": {
+        "sands": ["HP%", "Elemental Mastery"],
+        "goblet": ["Pyro DMG Bonus%"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "CRIT Rate & CRIT DMG (Rasio 1:2)",
+        "Elemental Mastery (target 150-250)",
+        "HP%",
+        "Flat HP"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 65, "recommended": 75, "unit": "%" },
+        "critDmg": { "min": 180, "recommended": 220, "unit": "%" },
+        "energyRecharge": { "min": 100, "recommended": 110, "unit": "%" },
+        "elementalMastery": { "min": 150, "recommended": 250, "unit": "" },
+        "hp": { "min": 30000, "recommended": 34000, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Double Hydro Hu Tao",
+          "description": "Kombinasi klasik Xingqiu + Furina / Yelan yang memberikan Hydro Resonance (+25% HP) dan damage single-target tak tertandingi.",
+          "members": [
+            { "characterId": "hu-tao", "name": "Hu Tao", "role": "Main DPS", "element": "pyro", "icon": "/assets/characters/hu-tao.png" },
+            { "characterId": "xingqiu", "name": "Xingqiu", "role": "Hydro Sub-DPS", "element": "hydro", "icon": "/assets/characters/xingqiu.png" },
+            { "characterId": "furina", "name": "Furina / Yelan", "role": "Hydro Sub-DPS & Buffer", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "xilonen", "name": "Xilonen / Zhongli", "role": "Shield & Res Shred", "element": "geo", "icon": "/assets/characters/xilonen.png" }
+          ],
+          "rotationOrder": [
+            "1. Xingqiu Q -> N1 -> E -> E (Raincutter Hydro orbit)",
+            "2. Furina E -> Q (Salon members & Fanfare)",
+            "3. Support / Xilonen E (Shred RES musuh)",
+            "4. Hu Tao E -> 8-9x Charged Attack + Jump/Dash Cancel -> Q (Burst finisher)"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "currentPatch": "5.4",
+  "activePhase": 1,
+  "phases": [
+    {
+      "patch": "5.4",
+      "phase": 1,
+      "title": "Fase 1: Stargazing Resonance & Waters of Solitude",
+      "startDate": "2026-11-01T04:00:00+08:00",
+      "endDate": "2026-11-25T17:59:59+08:00",
+      "characters5Star": [
+        {
+          "id": "mitya",
+          "name": "Mitya",
+          "element": "electro",
+          "weaponType": "catalyst",
+          "icon": "/assets/characters/mitya.png",
+          "bannerTitle": "Stargazing Energy Resonator"
+        },
+        {
+          "id": "furina",
+          "name": "Furina",
+          "element": "hydro",
+          "weaponType": "sword",
+          "icon": "/assets/characters/furina.png",
+          "bannerTitle": "Chanson of Many Waters"
+        }
+      ],
+      "characters4Star": [
+        {
+          "id": "bennett",
+          "name": "Bennett",
+          "element": "pyro",
+          "weaponType": "sword",
+          "icon": "/assets/characters/bennett.png"
+        },
+        {
+          "id": "xingqiu",
+          "name": "Xingqiu",
+          "element": "hydro",
+          "weaponType": "sword",
+          "icon": "/assets/characters/xingqiu.png"
+        },
+        {
+          "id": "kachina",
+          "name": "Kachina",
+          "element": "geo",
+          "weaponType": "polearm",
+          "icon": "/assets/characters/kachina.png"
+        }
+      ],
+      "weapons5Star": [
+        {
+          "name": "Starsealed Edict",
+          "type": "catalyst",
+          "rarity": 5,
+          "icon": "/assets/weapons/catalyst.svg"
+        },
+        {
+          "name": "Splendor of Tranquil Waters",
+          "type": "sword",
+          "rarity": 5,
+          "icon": "/assets/weapons/sword.svg"
+        }
+      ],
+      "weapons4Star": [
+        {
+          "name": "Favonius Sword",
+          "type": "sword",
+          "rarity": 4,
+          "icon": "/assets/weapons/sword.svg"
+        },
+        {
+          "name": "The Widsith",
+          "type": "catalyst",
+          "rarity": 4,
+          "icon": "/assets/weapons/catalyst.svg"
+        },
+        {
+          "name": "Dragon's Bane",
+          "type": "polearm",
+          "rarity": 4,
+          "icon": "/assets/weapons/polearm.svg"
+        },
+        {
+          "name": "Sacrificial Fragments",
+          "type": "catalyst",
+          "rarity": 4,
+          "icon": "/assets/weapons/catalyst.svg"
+        }
+      ]
+    },
+    {
+      "patch": "5.4",
+      "phase": 2,
+      "title": "Fase 2: Judgment of Tides & Balemoon Embers",
+      "startDate": "2026-11-25T18:00:00+08:00",
+      "endDate": "2026-12-16T14:59:59+08:00",
+      "characters5Star": [
+        {
+          "id": "neuvillette",
+          "name": "Neuvillette",
+          "element": "hydro",
+          "weaponType": "catalyst",
+          "icon": "/assets/characters/neuvillette.png",
+          "bannerTitle": "Decree of the Depths"
+        },
+        {
+          "id": "arlecchino",
+          "name": "Arlecchino",
+          "element": "pyro",
+          "weaponType": "polearm",
+          "icon": "/assets/characters/arlecchino.png",
+          "bannerTitle": "Ashes Reborn of the Dire Balemoon"
+        }
+      ],
+      "characters4Star": [
+        {
+          "id": "kujou-sara",
+          "name": "Kujou Sara",
+          "element": "electro",
+          "weaponType": "bow",
+          "icon": "/assets/characters/kujou-sara.png"
+        },
+        {
+          "id": "xiangling",
+          "name": "Xiangling",
+          "element": "pyro",
+          "weaponType": "polearm",
+          "icon": "/assets/characters/xiangling.png"
+        },
+        {
+          "id": "chevreuse",
+          "name": "Chevreuse",
+          "element": "pyro",
+          "weaponType": "polearm",
+          "icon": "/assets/characters/chevreuse.png"
+        }
+      ],
+      "weapons5Star": [
+        {
+          "name": "Tome of the Eternal Flow",
+          "type": "catalyst",
+          "rarity": 5,
+          "icon": "/assets/weapons/catalyst.svg"
+        },
+        {
+          "name": "Crimson Moon's Semblance",
+          "type": "polearm",
+          "rarity": 5,
+          "icon": "/assets/weapons/polearm.svg"
+        }
+      ],
+      "weapons4Star": [
+        {
+          "name": "Sacrificial Jade",
+          "type": "catalyst",
+          "rarity": 4,
+          "icon": "/assets/weapons/catalyst.svg"
+        },
+        {
+          "name": "White Tassel",
+          "type": "polearm",
+          "rarity": 4,
+          "icon": "/assets/weapons/polearm.svg"
+        }
+      ]
+    }
+  ]
+}

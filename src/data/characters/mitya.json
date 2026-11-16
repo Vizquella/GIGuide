@@ -1,0 +1,114 @@
+{
+  "id": "mitya",
+  "name": "Mitya",
+  "title": "Stargazing Energy Luminary",
+  "rarity": 5,
+  "element": "electro",
+  "weaponType": "catalyst",
+  "region": "Snezhnaya",
+  "primaryRole": "Main DPS",
+  "icon": "/assets/characters/mitya.png",
+  "materials": {
+    "bookName": "Teachings of Energy / Guide to Energy",
+    "days": ["Monday", "Thursday", "Sunday"],
+    "domain": "Palace of Frost (Snezhnaya)",
+    "weeklyBoss": "Project Mistilteinn (Royal Research Facility)",
+    "worldBoss": "Anti-Celestia Resonance Core",
+    "localSpecialty": "Frostbloom Lily (Zapolyarny Highlands)",
+    "commonMaterial": "Royal Energy Condenser (Snezhnaya Automatons)",
+    "elementalGem": "Vajrada Amethyst"
+  },
+  "builds": [
+    {
+      "id": "mitya-stellar-carry",
+      "name": "Stellar-Conduct Charged Attack Hypercarry",
+      "description": "Memanfaatkan mekanika reaksi Stellar-Conduct dan syal hidupnya untuk memicu ledakan Overloaded Detection Cores dengan damage Electro terkalibrasi tinggi berdasarkan Elemental Mastery.",
+      "talentPriority": [
+        "Normal Attack: Stellar Orbit (Prioritas Utama Lv 9-10)",
+        "Elemental Skill: Detection Core Synthesis (Prioritas Utama Lv 9-10)",
+        "Elemental Burst: Celestial Overdrive (Lv 8-9)"
+      ],
+      "weapons": [
+        {
+          "name": "Starsealed Edict",
+          "ranking": "BiS",
+          "rarity": 5,
+          "notes": "Signature Catalyst: Memberikan CRIT DMG masif, meningkatkan Elemental Mastery tim, dan mendongkrak Charged Attack DMG sebesar 48% saat reaksi Electro terpicu."
+        },
+        {
+          "name": "Kagura's Verity",
+          "ranking": "5-Star Best",
+          "rarity": 5,
+          "notes": "Memberikan 66.2% CRIT DMG dan bonus penumpukan Elemental Skill DMG."
+        },
+        {
+          "name": "The Widsith (R5)",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Pilihan bintang 4 terbaik: CRIT DMG 55.1% dan buff acak ATK%, Elemental DMG%, atau EM yang sangat masif."
+        },
+        {
+          "name": "Sacrificial Jade (Battle Pass)",
+          "ranking": "4-Star Best",
+          "rarity": 4,
+          "notes": "Menyediakan CRIT Rate 36.8% dan bonus EM saat off-field."
+        },
+        {
+          "name": "Mappa Mare (R5)",
+          "ranking": "F2P",
+          "rarity": 4,
+          "notes": "Senjata craftable Blacksmith gratis dengan substat Elemental Mastery dan pasif bonus Elemental DMG."
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Gilded Dreams", "pieces": 4 }],
+          "notes": "Memberikan hingga total +230 EM dan +14% ATK, memaksimalkan konversi damage Stellar Cores."
+        },
+        {
+          "type": "4-piece",
+          "sets": [{ "name": "Golden Troupe", "pieces": 4 }],
+          "notes": "Alternatif luar biasa untuk gaya bermain berbasis serangan berkala Elemental Skill (+70% Skill DMG)."
+        }
+      ],
+      "mainStats": {
+        "sands": ["Elemental Mastery", "ATK%"],
+        "goblet": ["Electro DMG Bonus%", "Elemental Mastery"],
+        "circlet": ["CRIT Rate%", "CRIT DMG%"]
+      },
+      "subStatsPriority": [
+        "CRIT Rate & CRIT DMG (Rasio 1:2)",
+        "Elemental Mastery (target 300 - 500)",
+        "Energy Recharge (target 130% - 140%)",
+        "ATK%"
+      ],
+      "targetEndgameStats": {
+        "critRate": { "min": 65, "recommended": 75, "unit": "%" },
+        "critDmg": { "min": 160, "recommended": 200, "unit": "%" },
+        "energyRecharge": { "min": 130, "recommended": 145, "unit": "%" },
+        "elementalMastery": { "min": 350, "recommended": 500, "unit": "" },
+        "atk": { "min": 1600, "recommended": 1850, "unit": "" }
+      },
+      "teamComps": [
+        {
+          "name": "Mitya Furina Electro-Charged Conduit",
+          "description": "Sinergi dahsyat antara Mitya dan Furina, memanfaatkan buff Fanfare Furina untuk melipatgandakan burst Stellar Mitya.",
+          "members": [
+            { "characterId": "mitya", "name": "Mitya", "role": "Main DPS", "element": "electro", "icon": "/assets/characters/mitya.png" },
+            { "characterId": "furina", "name": "Furina", "role": "Hydro Buffer & Sub-DPS", "element": "hydro", "icon": "/assets/characters/furina.png" },
+            { "characterId": "kaedehara-kazuha", "name": "Kaedehara Kazuha", "role": "Anemo Buffer & CC", "element": "anemo", "icon": "/assets/characters/kaedehara-kazuha.png" },
+            { "characterId": "xilonen", "name": "Xilonen / Baizhu", "role": "Res Shred & Healer", "element": "geo", "icon": "/assets/characters/xilonen.png" }
+          ],
+          "rotationOrder": [
+            "1. Furina E -> Q (Panggil salon & aktifkan Fanfare)",
+            "2. Mitya E (Sintesis Detection Cores awal)",
+            "3. Kazuha E -> Q (Double Swirl Hydro & Electro)",
+            "4. Xilonen E -> 2x NA (Cinder City 40% DMG buff & Heal)",
+            "5. Mitya Q -> Serang dengan Charged Attack combo beruntun"
+          ]
+        }
+      ]
+    }
+  ]
+}
