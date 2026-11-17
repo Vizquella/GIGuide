@@ -137,13 +137,15 @@ export function ActiveBannerWidget() {
                       className="w-full h-full object-cover"
                     />
                     {/* Official Element badge */}
-                    <div className="absolute top-1 left-1 w-6 h-6 rounded-md bg-black/75 p-1 border border-white/20">
+                    <div
+                      className={`absolute top-1 left-1 w-6 h-6 rounded-md bg-black/85 p-1 border ${style.borderColor} shadow-sm flex items-center justify-center`}
+                    >
                       <Image
                         src={`/assets/elements/${char.element}.svg`}
                         alt={char.element}
                         width={20}
                         height={20}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain filter drop-shadow"
                       />
                     </div>
                   </div>

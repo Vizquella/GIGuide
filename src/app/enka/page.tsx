@@ -284,7 +284,7 @@ function EnkaContent() {
                           : "bg-slate-900/60 border-white/10 hover:border-white/20"
                       }`}
                     >
-                      <div className="w-10 h-10 rounded-lg overflow-hidden bg-slate-950 border border-white/10 flex-shrink-0">
+                      <div className="w-10 h-10 rounded-lg overflow-hidden bg-slate-950 border border-white/10 flex-shrink-0 relative">
                         <Image
                           src={char.icon}
                           alt={char.name}
@@ -292,6 +292,17 @@ function EnkaContent() {
                           height={40}
                           className="w-full h-full object-cover"
                         />
+                        {char.element && (
+                          <div className="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-black/90 border border-white/20 p-0.5 flex items-center justify-center shadow-sm">
+                            <Image
+                              src={`/assets/elements/${char.element}.svg`}
+                              alt={char.element}
+                              width={12}
+                              height={12}
+                              className="w-full h-full object-contain filter drop-shadow"
+                            />
+                          </div>
+                        )}
                       </div>
                       <div className="text-left pr-2">
                         <h4 className="text-xs font-bold text-white truncate max-w-[110px]">

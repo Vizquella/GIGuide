@@ -100,13 +100,15 @@ export function CharacterDetailView({ character }: CharacterDetailViewProps) {
                 className="w-full h-full object-cover"
                 priority
               />
-              <div className="absolute top-1.5 left-1.5 w-7 h-7 rounded-lg bg-black/80 p-1 border border-white/20">
+              <div
+                className={`absolute top-1.5 left-1.5 w-7 h-7 rounded-lg bg-black/85 p-1 border ${style.borderColor} shadow-md flex items-center justify-center`}
+              >
                 <Image
                   src={`/assets/elements/${character.element}.svg`}
                   alt={character.element}
                   width={24}
                   height={24}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain filter drop-shadow"
                 />
               </div>
             </div>
@@ -548,7 +550,7 @@ export function CharacterDetailView({ character }: CharacterDetailViewProps) {
                           key={m.name}
                           className={`p-3 rounded-xl bg-slate-900/80 border ${mStyle.borderColor} flex items-center gap-2.5`}
                         >
-                          <div className="w-10 h-10 rounded-lg overflow-hidden bg-slate-950 flex-shrink-0">
+                          <div className="w-10 h-10 rounded-lg overflow-hidden bg-slate-950 flex-shrink-0 relative">
                             <Image
                               src={m.icon}
                               alt={m.name}
@@ -556,6 +558,17 @@ export function CharacterDetailView({ character }: CharacterDetailViewProps) {
                               height={40}
                               className="w-full h-full object-cover"
                             />
+                            <div
+                              className={`absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-black/90 border ${mStyle.borderColor} p-0.5 flex items-center justify-center shadow-sm`}
+                            >
+                              <Image
+                                src={`/assets/elements/${m.element}.svg`}
+                                alt={m.element}
+                                width={12}
+                                height={12}
+                                className="w-full h-full object-contain filter drop-shadow"
+                              />
+                            </div>
                           </div>
                           <div className="min-w-0">
                             <h5 className="text-xs font-bold text-white truncate">{m.name}</h5>

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Search, X, RotateCcw, Filter, MapPin } from "lucide-react";
 import { ElementType, WeaponType, Rarity, Region } from "@/types";
+import { getElementStyle } from "@/lib/elementTheme";
 
 interface CharacterFilterProps {
   searchQuery: string;
@@ -109,28 +110,32 @@ export function CharacterFilter({
           >
             Semua
           </button>
-          {ELEMENTS.map((el) => (
-            <button
-              key={el.id}
-              onClick={() => onElementChange(el.id)}
-              className={`px-2.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 flex-shrink-0 transition-all capitalize ${
-                selectedElement === el.id
-                  ? "bg-slate-100 text-slate-950 font-bold shadow-md scale-105"
-                  : "bg-black/30 text-slate-400 hover:text-white border border-white/5"
-              }`}
-            >
-              <div className="w-4 h-4 overflow-hidden flex items-center justify-center">
-                <Image
-                  src={`/assets/elements/${el.id}.svg`}
-                  alt={el.name}
-                  width={16}
-                  height={16}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <span>{el.name}</span>
-            </button>
-          ))}
+          {ELEMENTS.map((el) => {
+            const isSelected = selectedElement === el.id;
+            const elStyle = getElementStyle(el.id);
+            return (
+              <button
+                key={el.id}
+                onClick={() => onElementChange(el.id)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 flex-shrink-0 transition-all capitalize ${
+                  isSelected
+                    ? `${elStyle.badgeBg} font-bold shadow-lg scale-105 ring-1 ring-white/20`
+                    : "bg-black/30 text-slate-300 hover:text-white border border-white/5 hover:border-white/20"
+                }`}
+              >
+                <div className="w-4 h-4 overflow-hidden flex items-center justify-center flex-shrink-0">
+                  <Image
+                    src={`/assets/elements/${el.id}.svg`}
+                    alt={el.name}
+                    width={16}
+                    height={16}
+                    className="w-full h-full object-contain filter drop-shadow"
+                  />
+                </div>
+                <span>{el.name}</span>
+              </button>
+            );
+          })}
         </div>
 
         {/* Row 2: Region Selector */}

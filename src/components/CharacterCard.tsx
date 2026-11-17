@@ -42,13 +42,15 @@ export function CharacterCard({ character }: CharacterCardProps) {
               className="w-full h-full object-cover"
             />
             {/* Element Icon Badge */}
-            <div className="absolute top-1 left-1 w-5 h-5 rounded-md bg-black/75 p-0.5 border border-white/20">
+            <div
+              className={`absolute top-1 left-1 w-5 h-5 rounded-md bg-black/85 p-0.5 border ${style.borderColor} shadow-sm backdrop-blur-sm flex items-center justify-center`}
+            >
               <Image
                 src={`/assets/elements/${character.element}.svg`}
                 alt={character.element}
                 width={16}
                 height={16}
-                className="w-full h-full"
+                className="w-full h-full object-contain filter drop-shadow"
               />
             </div>
           </div>
@@ -66,8 +68,17 @@ export function CharacterCard({ character }: CharacterCardProps) {
                 {character.rarity === 5 ? "★★★★★" : "★★★★"}
               </span>
               <span
-                className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${style.badgeBg} capitalize`}
+                className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${style.badgeBg} capitalize flex items-center gap-1`}
               >
+                <span className="w-2.5 h-2.5 inline-block">
+                  <Image
+                    src={`/assets/elements/${character.element}.svg`}
+                    alt=""
+                    width={10}
+                    height={10}
+                    className="w-full h-full object-contain"
+                  />
+                </span>
                 {character.element}
               </span>
             </div>

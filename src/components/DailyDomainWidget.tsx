@@ -171,13 +171,15 @@ export function DailyDomainWidget() {
                             />
                           </div>
                           {/* Mini Element badge */}
-                          <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-black/80 border border-white/20 p-0.5">
+                          <div
+                            className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-black/90 border ${style.borderColor} p-0.5 flex items-center justify-center shadow-sm`}
+                          >
                             <Image
                               src={`/assets/elements/${c.element}.svg`}
                               alt={c.element}
                               width={12}
                               height={12}
-                              className="w-full h-full"
+                              className="w-full h-full object-contain filter drop-shadow"
                             />
                           </div>
                         </Link>
